@@ -67,19 +67,26 @@ label{
 
 #backgroundVideo {
 	position: relative;
-	/*position: fixed;*/
 	right: 0;left:0;top: 0;
 	z-index: -6;
 	width:100%;height:auto;
 	min-width:740px;min-height:460px;
+	overflow-y: hidden;/*はみ出してる動画部分を非表示に*/
+}
+
+#backgroundVideo > video{
+	position: absolute;
+	right: 0;left:0;top: 0;
+	width: 100%;height: auto;
 	background-color: #000;
 }
 
 .firstViewArea{
-	z-index: -4;
+	z-index: 0;
 	position: relative;
 	width: 100%;
 	height: 330px;
+	overflow: hidden;/*保険*/
 }
 
 .topLink{
