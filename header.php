@@ -16,9 +16,11 @@
 		<h1 class="title"><a href="<?php echo home_url('/');?>"><?php bloginfo('name');?></a></h1>
 		</div>
 		<div class="pattern"></div>
-		<video autoplay muted loop id="backgroundVideo" >
-		<source src="<?php echo get_stylesheet_directory_uri();?>/videos/alice_demo.mp4" type="video/mp4">
-		</video>
+		<div id="backgroundVideo">
+			<video autoplay muted loop>
+				<source src="<?php echo get_stylesheet_directory_uri();?>/videos/alice_demo.mp4" type="video/mp4">
+			</video>
+		</div>
 	</div>
 	<div id="header">
 		<div class="container">
